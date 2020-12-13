@@ -1,0 +1,60 @@
+/* up/down = one/two side to side = rowOne/rowTwo/rowThree */
+#bigDiv {
+  width: 350px;
+  height: 630px;
+  background-color: teal;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  text-align: center;
+}
+#status {
+  color: white;
+}
+#player1Score,
+#player2Score {
+  color: white;
+  font-size: 20px;
+}
+#littleDiv {
+  width: 295px;
+  height: 300px;
+  margin-top: 50px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  text-align: center;
+}
+h1 {
+  color: white;
+}
+
+.row {
+  width: 350px;
+  height: 100px;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 75px;
+}
+.one {
+  border-right: 2px solid white;
+}
+.two {
+  border-right: 2px solid white;
+}
+.rowOne {
+  border-bottom: 2px solid white;
+}
+.rowTwo {
+  border-bottom: 2px solid white;
+}

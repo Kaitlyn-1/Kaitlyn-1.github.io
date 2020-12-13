@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tic Tac Toe</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="bigDiv">
+    <h1>Tic Tac Toe</h1>
+    <div id="player1Score">Player 1 Score</div>
+    <div id="oScore"></div>
+    <div id="player2Score"> Player 2 Score</div>
+    <div id="xScore"></div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Player Name Setting</button>
+      <button id="clearBoardBtn" type="button" class="btn btn-success">Clear Board </button>
+    </div>
+    <div id="status"></div>
+    <div id="littleDiv">
+
+      <div id="playerBoard"></div>
+
+      <div class="row">
+        <div class="square one rowOne diLeft" id="firstOne"> </div>
+        <div class="square two rowOne" id="firstTwo">
+        </div>
+        <div class="square three rowOne diRight" id=firstThree>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="square one rowTwo" id="secondOne">
+        </div>
+        <div class="square two rowTwo diRight diLeft" id="secondTwo">
+        </div>
+        <div class="square three rowTwo" id="secondThree">
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="square one rowThree diRight" id="thirdOne">
+        </div>
+        <div class="square two rowThree" id="thirdTwo">
+        </div>
+        <div class="square three rowThree diLeft " id="thirdThree">
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div id="exampleModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Enter Name</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="exampleInputEmail1">O's Name</label>
+          <input id="O" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">X's Name</label>
+          <input id="X" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="startGameBtn" type="button" class="btn btn-primary">Start Game</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="example2Modal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Do you want to play again?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button id="yesBtn" type="button" class="btn btn-success">Yes </button>
+        <button id="noBtn" type="button" class="btn btn-danger" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
