@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Black Game</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="bigDiv" class="container">
+  <div id="reshuffle"></div>
+
+  <div class="btn-group" role="group" aria-label="Basic example">
+    <button id="dealBtn" type="button" class="btn btn-primary">Bet & Start Game</button>
+    <button id="hitBtn" type="button" class="btn btn-success">Hit</button>
+    <button id="stayBtn" type="button" class="btn btn-warning">Stay</button>
+    <button id="shuffleBtn" type="button" class="btn btn-secondary">Shuffle</button>
+
+  </div>
+  <div id="status"><strong>Blackjack</strong></div>
+  <div class="betContainer">
+    <div class="area">
+      <div id="bank_2"></div>
+
+    </div>
+    <div id="player1Bet" class="area">
+      <div id="bank_1"></div>
+
+    </div>
+  </div>
+  <div id="littleDiv">
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <div id="btnsBet" class="btn-group mr-2" role="group" aria-label="First group">
+        <button value="10" type="button" class="btn btn-danger bet">$10</button>
+        <button value="20" type="button" class="btn btn-warning bet">$20</button>
+        <button value="30" type="button" class="btn btn-success bet">$30</button>
+        <button value="40" type="button" class="btn btn-info bet">$40</button>
+        <button value="50" type="button" class="btn btn-primary bet">$50</button>
+        <button value="60" type="button" class="btn btn-secondary bet">$60</button>
+        <button value="70" type="button" class="btn btn-dark bet">$70</button>
+        <button value="80" type="button" class="btn btn-light bet">$80</button>
+      </div>
+    </div>
+    <div class="firstPlayer">
+      <div>
+        <div id="player2" class="player2">
+          Dealer
+          <div id="hand_2"></div>
+          <div id="point_2"></div>
+
+        </div>
+        <div id="player1" class="player1">
+          Player 1
+
+          <div id="hand_1"></div>
+          <div id="point_1"></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div> <!-- big div -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
